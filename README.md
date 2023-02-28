@@ -40,7 +40,7 @@ $ npm -v
 Afin d'obtenir ce repos et d'installer les dépendances NPM:
 
 ```bash
-git clone git@github.com/rworganization/workshop-basics.git
+git clone https://github.com/rworganization/workshop-basics.git
 cd workshop-basics
 npm install
 ```
