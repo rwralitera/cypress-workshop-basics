@@ -4,7 +4,7 @@
 
 ## Aide-mémoire
 ```js
-cy.get('a') 
+cy.get('a')
 cy.get('.class')
 cy.get('#id')
 cy.get('[attribute]')

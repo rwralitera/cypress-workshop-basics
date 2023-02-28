@@ -38,6 +38,6 @@ ou de visiter la page à propos comme celui-ci :
 cy.visit('/about')
 ```
 
-## Useful reading
+## Lecture utile
 * [documentation for .visit() command](https://docs.cypress.io/api/commands/visit.html#Syntax)
 * [Best practices for using baseUrl](https://docs.cypress.io/guides/references/best-practices.html#Setting-a-global-baseUrl)

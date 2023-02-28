@@ -24,5 +24,15 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 Cypress.Commands.add('login', (email, password) => { 
-  
+  cy.get('#navbarAccount').click()
+  cy.get('#navbarLoginButton').click()
+  cy.get('#email').type(email)
+  cy.get('#email').should('have.value',email)
+  cy.get('#password').type(password)
+  cy.get('[aria-label="Button to display the password"]').click()
+  cy.get('#password').should('have.value',password)
+  cy.get('#rememberMe-input').check({force: true})
+  cy.get('#rememberMe-input').should('be.checked')
+  cy.get('#loginButton').click()
+  cy.contains(' Your Basket').should('be.visible')
  })

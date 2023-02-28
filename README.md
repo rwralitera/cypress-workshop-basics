@@ -45,7 +45,19 @@ cd workshop-basics
 npm install
 ```
 
+Afin d'obtenir une version en local de juice-shop,
+Ouvrir un autre terminal puis:
+
+```bash
+git clone https://github.com/juice-shop/juice-shop.git --depth 1
+cd juice-shop
+npm install
+npm start
+```
+
 ### Check rapide ✅
+
+Depuis votre navigateur, vérifier que l'URL http://demo.owasp-juice.shop est fonctionnel.
 
 Depuis la fenêtre du terminal, vous devriez pouvoir ouvrir Cypress à la racine du projet avec :
 
