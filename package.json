@@ -1,0 +1,23 @@
+{
+  "name": "workshop-basics",
+  "version": "1.0.0",
+  "description": "> Tests e2e pour le workshop [Cypress.io](https://assurancequalite.talentlms.com/catalog/info/id:138)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rworganization/workshop-basics.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rworganization/workshop-basics/issues"
+  },
+  "homepage": "https://github.com/rworganization/workshop-basics#readme",
+  "dependencies": {
+    "cypress": "^12.7.0"
+  }
+}
