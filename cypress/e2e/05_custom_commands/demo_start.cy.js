@@ -1,7 +1,11 @@
 /// <reference types="cypress" />
 
-// Créez une fonction qui permet de naviguer sur la page principale 
-// et de fermer la fenêtre de bienvenue qui revient tout le temps
+
+const openURL = () => {
+  // Créez une fonction qui permet de naviguer sur la page principale 
+  // et de fermer la fenêtre de bienvenue qui revient tout le temps
+  // en retirant les codes duplicates
+}
 
 describe('Navigation', () => {
   it('Welcome page should appears on the main pages', () => {
@@ -10,9 +14,9 @@ describe('Navigation', () => {
   })
 
   it('user should be able to navigate to the contact us page', () => {
-    cy.visit('/')
-    cy.get('#mat-dialog-0').should('be.visible')
-    cy.get('.close-dialog').click()
+    cy.visit('/') // code duplicate
+    cy.get('#mat-dialog-0').should('be.visible') // code duplicate
+    cy.get('.close-dialog').click() // code duplicate
     cy.get('[aria-label="Open Sidenav"]').click()
     cy.get('[aria-label="Go to contact us page"]').click()
     cy.url().should('contain', 'contact')

@@ -1,13 +1,12 @@
 /// <reference types="cypress" />
 
 // ⚠️ vous pouvez changer "it" en "it.only" pour exécuter un seul test
-// challenge #1: sélectionnez le carré à l'aide de la classe,
-// le cercle à l'aide de l'id, 
-// le triangle à l'aide de l'attribut 
-// et l'intitulé à l'aide du texte.
 it('class, id, attr, text', { baseUrl: null }, () => {
-
   cy.visit('./mini-apps/shapes.html');
+  // challenge #1: sélectionnez le carré à l'aide de la classe,
+  // le cercle à l'aide de l'id, 
+  // le triangle à l'aide de l'attribut 
+  // et l'intitulé à l'aide du texte.
 
 })
 

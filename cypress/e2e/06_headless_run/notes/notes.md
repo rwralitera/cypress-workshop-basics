@@ -9,7 +9,7 @@ Par défaut, Cypress exécutera tous les fichiers du dossier `cypress/e2e`. Ceci
 
 Ou peut être défini comme un drapeau dans le terminal :
 ```
-npx cypress run --spec cypress/e2e/fileName.js
+npx cypress run --spec cypress/e2e/fileName.cy.js
 ```
 
 Il y a beaucoup d'autres options que l'on peut trouver dans les [docs](https://docs.cypress.io/guides/guides/command-line#cypress-run)

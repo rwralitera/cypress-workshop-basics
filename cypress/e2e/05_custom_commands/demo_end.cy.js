@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-// On a factoriser 3 lignes dans une fonction
+// On a factorisé 3 lignes dans une fonction
 const openURL = () => {
   cy.visit('/')
   cy.get('#mat-dialog-0').should('be.visible')

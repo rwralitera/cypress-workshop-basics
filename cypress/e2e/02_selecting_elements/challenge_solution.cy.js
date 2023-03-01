@@ -3,18 +3,16 @@
 /// <reference types="cypress" />
 
 // ⚠️ vous pouvez changer "it" en "it.only" pour exécuter un seul test
-// challenge #1: sélectionnez le carré à l'aide de la classe,
-// le cercle à l'aide de l'id, 
-// le triangle à l'aide de l'attribut 
-// et l'intitulé à l'aide du texte.
+
 it('class, id, attr, text', { baseUrl: null }, () => {
 
   cy.visit('./mini-apps/shapes.html');
-  cy.contains('Shapes')
+  // challenge #1:
+  cy.contains('Shapes') // l'intitulé à l'aide du texte.
     .get('h1')
-    .get('.square')
-    .get('#circle')
-    .get('[data-cy="triangle"]');
+    .get('.square') // sélectionnez le carré à l'aide de la classe,
+    .get('#circle') // le cercle à l'aide de l'id,
+    .get('[data-cy="triangle"]'); // le triangle à l'aide de l'attribut
 
 })
 
